@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronometro</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Clock 🌕 ☀️</title>
+    <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,20 +19,20 @@
     </header>
     <main>
         <div class="container">
+
             <div class="wrapper">
-                <span class="counter" id="stopwatch">00:00:00</span>
-                <button class="btn-stopwatch" id="play"><i class="fas fa-play"></i></button>
-                <button class="btn-stopwatch" id="stop"><i class="fas fa-stop"></i></button>
-                <button class="btn-stopwatch" id="reset"><i class="fas fa-redo-alt"></i></button>
+                <span class="counter" id="hours">9:06 PM</span>
+                <span class="date" id="date">Viernes 26 del 2021</span>
             </div>
+
             <div class="sidebar">
                 <ul class="sidebar__list">
-                    <li class="sidebar__item">
+                    <li class="sidebar__item" onclick="redirect('/html/index.html')">
                         <i class="fas fa-stopwatch"></i>
                         <span>Stopwatch</span>
                     </li>
-    
-                    <li class="sidebar__item">
+
+                    <li class="sidebar__item select">
                         <i class="fas fa-clock"></i>
                         <span>Clock</span>
                     </li>
@@ -39,12 +40,8 @@
             </div>
         </div>
     </main>
-    <footer>
-        <a href="https://github.com/FrankkDeveloper?tab=repositories" target="_blank" rel="noopener noreferrer"><i
-                class="fab fa-github icon-github"></i></a>
-        <p>Pagina web hecha por &copy; Frankk</p>
-    </footer>
-    <script src="app.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/clock.js"></script>
     <script src="https://kit.fontawesome.com/7307cffc6d.js" crossorigin="anonymous"></script>
 </body>
 

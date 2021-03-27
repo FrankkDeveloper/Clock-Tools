@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  height:  89vh;
+  height: 89vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,9 +26,15 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.counter{
+.counter {
   font-size: 123px;
+  font-weight: 300;
   display: block;
+}
+
+.date {
+  font-size: 23px;
+  font-weight: 300;
 }
 
 button {
@@ -60,8 +66,8 @@ button:hover {
   height: 0;
 }
 
-.sidebar{
-  background-color: #252525;
+.sidebar {
+  background-color: #141414;
   color: #ffffff;
   width: 100px;
   height: 100vh;
@@ -70,22 +76,33 @@ button:hover {
   top: 0;
 }
 
-.sidebar__item{
+.sidebar__item {
   text-align: center;
-  padding: 10px;
-  margin-top: 10px;
+  font-weight: 400;
+  padding: 15px 0;
   cursor: pointer;
-
+  border-bottom: 1px solid #292929;
+  transition: 0.1s background-color ease;
 }
 
-.sidebar__item i{
+.sidebar__item:hover {
+  background-color: #202020;
+}
+
+.sidebar__item.select {
+  background-color: #dfdfdf;
+  color: #3a3a3a;
+}
+
+.sidebar__item i {
   display: block;
   font-size: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
 }
 
 footer {
   text-align: center;
+  font-weight: 500;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -101,13 +118,13 @@ footer {
 
 body.dark-mode {
   background-color: #181818;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
-body.dark-mode .wrapper{
+body.dark-mode .wrapper {
   background-color: rgba(10, 10, 10, 0.8);
   color: #ffffff;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 body.dark-mode .btn-stopwatch {
   color: #ffffff;
@@ -117,22 +134,21 @@ body.dark-mode .btn-stopwatch:disabled {
   color: rgb(139, 139, 139);
 }
 
-body.dark-mode .btn-dark-mode{
+body.dark-mode .btn-dark-mode {
   color: #ffffff;
 }
 
 body.dark-mode footer,
-body.dark-mode .icon-github{
+body.dark-mode .icon-github {
   color: #ffffff;
 }
 
-
-@media screen and (max-width:540px){
-  .wrapper{
+@media screen and (max-width: 540px) {
+  .wrapper {
     width: 90%;
   }
 
-  .counter{
+  .counter {
     line-height: 150px;
     font-size: 20vw;
   }
